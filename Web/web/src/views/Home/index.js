@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import * as S from './styles'
 
 ///Nossos Components
+
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
 import FilterCard from '../../Components/FilterCard';
+import TaskCard from '../../Components/TaskCard';
+
 
 function Home() {
   const [filterActived, setFilterActived] = useState();
@@ -32,6 +35,28 @@ function Home() {
       <FilterCard title="Ano"      actived={filterActived == 'year'} />
     </button>
     </S.FilterArea>
+
+      <S.Title>
+       <h3> Tarefas</h3>
+      </S.Title>
+
+    <S.Content>
+
+
+
+      <TaskCard></TaskCard>
+      <TaskCard></TaskCard>
+      <TaskCard></TaskCard>
+      <TaskCard></TaskCard>
+      <TaskCard></TaskCard>
+      <TaskCard></TaskCard>
+      <TaskCard></TaskCard>
+      <TaskCard></TaskCard>
+      <TaskCard></TaskCard>
+      <TaskCard></TaskCard>
+      <TaskCard></TaskCard>
+
+    </S.Content>
 
     <Footer/>
   
